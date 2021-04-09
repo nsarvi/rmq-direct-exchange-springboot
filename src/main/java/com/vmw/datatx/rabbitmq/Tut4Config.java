@@ -1,20 +1,5 @@
-package com.vmw.datatx.rabbitmq;/*
- * Copyright 2015 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+package com.vmw.datatx.rabbitmq;
 
-import org.springframework.amqp.core.AnonymousQueue;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
@@ -23,45 +8,37 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import java.util.HashMap;
-import java.util.Map;
-
-/**
- * @author Gary Russell
- * @author Scott Deeg
- *
- */
-@Profile({"tut4","routing"})
+@Profile({"tut4", "routing"})
 @Configuration
 public class Tut4Config {
+	public Tut4Config() {
+	}
 
 	@Bean
 	public DirectExchange direct() {
 		return new DirectExchange("test.federation.direct");
 	}
 
-	@Profile("receiver")
+	@Profile({"sender"})
+	@Bean
+	public Tut4Sender sender() {
+		return new Tut4Sender();
+	}
+
+	@Profile({"receiver"})
 	private static class ReceiverConfig {
+		private ReceiverConfig() {
+		}
 
 		@Bean
 		public Queue autoDeleteQueue1() {
-
-			Map<String, Object> arguments= new HashMap<String, Object>();
-			arguments.put("x-queue-type","quorum");
-			return new Queue("test.federation.orange", true, false, false,arguments);
-			//return new Queue("test.federation.orange");
+			return new Queue("test.federation.orange");
 		}
 
 		@Bean
 		public Queue autoDeleteQueue2() {
-
-			Map<String, Object> arguments= new HashMap<String, Object>();
-			arguments.put("x-queue-type","quorum");
-			return new Queue("test.federation.black", true, false, false,arguments);
-			// return new Queue("test.federation.black");
-
+			return new Queue("test.federation.black");
 		}
-
 
 		@Bean
 		public Binding binding1a(DirectExchange direct, Queue autoDeleteQueue1) {
@@ -85,15 +62,7 @@ public class Tut4Config {
 
 		@Bean
 		public Tut4Receiver receiver() {
-	 	 	return new Tut4Receiver();
+			return new Tut4Receiver();
 		}
-
 	}
-
-	@Profile("sender")
-	@Bean
-	public Tut4Sender sender() {
-		return new Tut4Sender();
-	}
-
 }

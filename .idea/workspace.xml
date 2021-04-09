@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d233fa9-a58b-46e0-98ac-c4580d03f559" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/classicqueuelibs/springboot-direct-exchange-publish-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4ConfigQQ.javabak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Config$ReceiverConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Config$ReceiverConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Receiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/vmw/datatx/rabbitmq/Tut4Sender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classicqueuelibs/springboot-direct-exchange-publish-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/springboot-direct-exchange-publish-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/springboot-direct-exchange-publish-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmw/datatx/rabbitmq/Tut4Sender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +97,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.springboot-direct-exchange-publish [build]">
+    <configuration name="TestJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vmw.datatx.rabbitmq.TestJava" />
+      <module name="springboot-direct-exchange-publish.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vmw.datatx.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="springboot-direct-exchange-publish [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -139,6 +169,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestJava" />
         <item itemvalue="Gradle.springboot-direct-exchange-publish [jar]" />
         <item itemvalue="Gradle.springboot-direct-exchange-publish [build]" />
         <item itemvalue="Gradle.springboot-direct-exchange-publish [clean]" />
@@ -159,37 +190,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="600" key="GridCell.Tab.0.bottom" timestamp="1612314083036">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="2518" height="479" key="GridCell.Tab.0.bottom" timestamp="1617982305117">
+      <screen x="1680" y="-10" width="2560" height="1415" />
     </state>
     <state width="2518" height="600" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1612314083036" />
     <state width="1398" height="313" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1611711016898" />
+    <state width="2518" height="479" key="GridCell.Tab.0.bottom/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617982305117" />
     <state width="1905" height="313" key="GridCell.Tab.0.bottom/1680.-12.2560.1417/0.23.1680.949@1680.-12.2560.1417" timestamp="1611684600289" />
     <state width="2518" height="600" key="GridCell.Tab.0.bottom/1680.-12.2560.1417/0.23.1680.954@1680.-12.2560.1417" timestamp="1611762794000" />
-    <state width="2518" height="600" key="GridCell.Tab.0.center" timestamp="1612314083036">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="2518" height="479" key="GridCell.Tab.0.center" timestamp="1617982305116">
+      <screen x="1680" y="-10" width="2560" height="1415" />
     </state>
     <state width="2518" height="600" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1612314083036" />
     <state width="1398" height="313" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1611711016897" />
+    <state width="2518" height="479" key="GridCell.Tab.0.center/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617982305116" />
     <state width="1905" height="313" key="GridCell.Tab.0.center/1680.-12.2560.1417/0.23.1680.949@1680.-12.2560.1417" timestamp="1611684600288" />
     <state width="2518" height="600" key="GridCell.Tab.0.center/1680.-12.2560.1417/0.23.1680.954@1680.-12.2560.1417" timestamp="1611762793999" />
-    <state width="2518" height="600" key="GridCell.Tab.0.left" timestamp="1612314083035">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="2518" height="479" key="GridCell.Tab.0.left" timestamp="1617982305115">
+      <screen x="1680" y="-10" width="2560" height="1415" />
     </state>
     <state width="2518" height="600" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1612314083035" />
     <state width="1398" height="313" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1611711016897" />
+    <state width="2518" height="479" key="GridCell.Tab.0.left/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617982305115" />
     <state width="1905" height="313" key="GridCell.Tab.0.left/1680.-12.2560.1417/0.23.1680.949@1680.-12.2560.1417" timestamp="1611684600287" />
     <state width="2518" height="600" key="GridCell.Tab.0.left/1680.-12.2560.1417/0.23.1680.954@1680.-12.2560.1417" timestamp="1611762793998" />
-    <state width="2518" height="600" key="GridCell.Tab.0.right" timestamp="1612314083036">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="2518" height="479" key="GridCell.Tab.0.right" timestamp="1617982305116">
+      <screen x="1680" y="-10" width="2560" height="1415" />
     </state>
     <state width="2518" height="600" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1612314083036" />
     <state width="1398" height="313" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1611711016898" />
+    <state width="2518" height="479" key="GridCell.Tab.0.right/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617982305116" />
     <state width="1905" height="313" key="GridCell.Tab.0.right/1680.-12.2560.1417/0.23.1680.949@1680.-12.2560.1417" timestamp="1611684600289" />
     <state width="2518" height="600" key="GridCell.Tab.0.right/1680.-12.2560.1417/0.23.1680.954@1680.-12.2560.1417" timestamp="1611762793999" />
-    <state x="2471" y="446" key="com.intellij.ide.util.TipDialog" timestamp="1615225271679">
-      <screen x="1680" y="-12" width="2560" height="1417" />
+    <state x="1780" y="90" width="2360" height="1215" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617981079711">
+      <screen x="1680" y="-10" width="2560" height="1415" />
     </state>
+    <state x="1780" y="90" width="2360" height="1215" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617981079711" />
+    <state x="2471" y="447" key="com.intellij.ide.util.TipDialog" timestamp="1617976889078">
+      <screen x="1680" y="-10" width="2560" height="1415" />
+    </state>
+    <state x="2471" y="447" key="com.intellij.ide.util.TipDialog/1680.-10.2560.1415/0.25.1680.945@1680.-10.2560.1415" timestamp="1617976889078" />
     <state x="519" y="329" key="com.intellij.ide.util.TipDialog/1680.-12.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1613680426231" />
     <state x="2471" y="446" key="com.intellij.ide.util.TipDialog/1680.-12.2560.1417/0.23.1680.947@1680.-12.2560.1417" timestamp="1615225271679" />
     <state x="519" y="330" key="com.intellij.ide.util.TipDialog/1680.-12.2560.1417/0.23.1680.949@1680.-12.2560.1417" timestamp="1611682046111" />

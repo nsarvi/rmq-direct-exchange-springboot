@@ -40,11 +40,6 @@ public class Tut4Receiver {
 		doWork(in);
 		watch.stop();
 		System.out.println("instance " + receiver + " [x] Done in " + watch.getTotalTimeSeconds() + "s");
-		try {
-			Thread.sleep(2);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 	private void doWork(String in) throws InterruptedException {

@@ -41,14 +41,23 @@ public class Tut4Sender {
 
 	private final String[] keys = {"orange", "black"};
 
-	@Scheduled(fixedDelay = 20, initialDelay = 10)
+	@Scheduled(fixedDelay = 1, initialDelay = 10)
 	public void send() {
 
 		String generatedString="";
-		if (this.count.get() % 5 == 0 ) {
-			generatedString = RandomStringUtils.randomAlphabetic(150000);
-		} else
-			generatedString = RandomStringUtils.randomAlphabetic(3000);
+
+		int i=this.count.get();
+		if (i % 100 >= 0 && i % 100 < 40) {
+			generatedString = RandomStringUtils.randomAlphabetic(1000);
+		}else
+		if (i % 100 >= 40 && i % 100 < 90) {
+			generatedString = RandomStringUtils.randomAlphabetic(10000);
+		} else if (i % 100 >= 90 && i % 100 < 100) {
+			generatedString = RandomStringUtils.randomAlphabetic(100000);
+		} else if (i % 100 == 100 ) {
+			generatedString = RandomStringUtils.randomAlphabetic(1000000);
+		}
+
 
 		StringBuilder builder = new StringBuilder(generatedString);
 		if (this.index.incrementAndGet() == 2) {
